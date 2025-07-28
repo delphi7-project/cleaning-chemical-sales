@@ -9,6 +9,9 @@ import About from "./pages/About";
 import Contacts from "./pages/Contacts";
 import Delivery from "./pages/Delivery";
 import Catalog from "./pages/Catalog";
+import ProductCatalogPage from "./pages/ProductCatalog";
+import ProductDetail from "./pages/ProductDetail";
+import Cart from "./pages/Cart";
 import Services from "./pages/Services";
 import News from "./pages/News";
 import Brands from "./pages/Brands";
@@ -46,6 +49,9 @@ const App = () => (
           <Route path="/contacts" element={<Contacts />} />
           <Route path="/delivery" element={<Delivery />} />
           <Route path="/catalog" element={<Catalog />} />
+          <Route path="/products" element={<ProductCatalogPage />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/cart" element={<Cart />} />
           <Route path="/services" element={<Services />} />
           <Route path="/news" element={<News />} />
           <Route path="/brands" element={<Brands />} />

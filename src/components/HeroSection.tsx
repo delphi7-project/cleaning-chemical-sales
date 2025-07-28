@@ -21,7 +21,7 @@ const HeroSection: React.FC = () => {
                 Подобрать средство
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-blue-600">
-                <a href="#catalog">Каталог товаров</a>
+                <a href="/products">Каталог товаров</a>
               </Button>
             </div>
           </div>

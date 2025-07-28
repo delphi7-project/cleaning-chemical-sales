@@ -113,7 +113,7 @@ const Catalog = () => {
               </CardHeader>
               <CardContent>
                 <Button className="w-full">
-                  Перейти в категорию
+                  <a href="/products">Перейти в категорию</a>
                   <Icon name="ArrowRight" size={16} className="ml-2" />
                 </Button>
               </CardContent>

@@ -32,7 +32,7 @@ const Navigation: React.FC<NavigationProps> = ({
             <div className="text-2xl font-bold text-blue-600">ChemStore</div>
             <div className="hidden md:flex space-x-6">
               <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Главная</a>
-              <a href="#catalog" className="text-gray-700 hover:text-blue-600 transition-colors">Каталог</a>
+              <a href="/products" className="text-gray-700 hover:text-blue-600 transition-colors">Каталог</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Доставка</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Оплата</a>
               <a href="#" className="text-gray-700 hover:text-blue-600 transition-colors">Контакты</a>
@@ -42,7 +42,7 @@ const Navigation: React.FC<NavigationProps> = ({
             {/* Cart Sheet */}
             <Sheet>
               <SheetTrigger asChild>
-                <Button variant="outline" size="sm" className="relative">
+                <Button variant="outline" size="sm" className="relative" onClick={() => window.location.href = '/cart'}>
                   <Icon name="ShoppingCart" size={16} className="mr-2" />
                   Корзина
                   {getCartItemsCount() > 0 && (
